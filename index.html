@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Criativa</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container">
+    <section id="intro">
+
+      <header>
+        <img src="logo.png" alt="Logo">
+      </header>
+
+      <main>
+        <p>
+          Ficar em casa em períodos longos, não deve ser nada fácil.
+        </p>
+        <p>
+          Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for
+          necessário para tornar
+          esse momento mais interessante.
+        </p>
+        <p>
+          Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
+        </p>
+      </main>
+
+      <section id="buttons">
+        <button onclick="onOff()">+ Adicionar Ideia</button>
+        <button class="fat">Ver Ideias</button>
+      </section>
+
+      <footer>
+        Com 💜 <a href="http://rocketseat.com.br">Rocketseat</a>
+      </footer>
+
+    </section>
+
+    <section id="last-ideias">
+      <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de Curso de Programação">
+
+        <div class="content">
+          <h3>Cursos de Programação</h3>
+          <p>Estudo</p>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere nisi saepe itaque, minima fugiat aut
+            odit doloribus dolorem, ut soluta nemo perspiciatis quasi ratione ea. Sapiente maiores provident minima!
+          </div>
+          <a href="#">Ir para a Ideia</a>
+        </div>
+      </div>
+      <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de Exercícios">
+
+        <div class="content">
+          <h3>Exercícios</h3>
+          <p>Saúde</p>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere nisi saepe itaque, minima fugiat aut
+            odit doloribus dolorem, ut soluta nemo perspiciatis quasi ratione ea. Sapiente maiores provident minima!
+          </div>
+          <a href="#">Ir para a Ideia</a>
+        </div>
+      </div>
+      <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditação">
+
+        <div class="content">
+          <h3>Meditação</h3>
+          <p>Mentalidade</p>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere nisi saepe itaque, minima fugiat aut
+            odit doloribus dolorem, ut soluta nemo perspiciatis quasi ratione ea. Sapiente maiores provident minima!
+          </div>
+          <a href="#">Ir para a Ideia</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal -->
+
+  <div id="modal" class="hide">
+    <div class="content">
+      <h1>Nova Ideia</h1>
+
+      <form action="">
+
+        <div class="input-wrapper">
+          <label for="title">Título da Ideia</label>
+          <input type="text" name="title">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="category">Categoria</label>
+          <input type="text" name="category">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="image">Link da Imagem</label>
+          <input type="url" name="image">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="title">Digite uma descrição para essa ideia</label>
+          <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="link">Link da ideia</label>
+          <input type="url" name="image">
+        </div>
+
+        <a href="#" onclick="onOff()">Voltar</a>
+        <button>Salvar</button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
