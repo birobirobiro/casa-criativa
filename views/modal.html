@@ -1,10 +1,11 @@
- <!-- Modal -->
+<!-- Modal -->
+<div id="modal" class="hide">
 
- <div id="modal" class="hide">
   <div class="content">
+
     <h1>Nova Ideia</h1>
 
-    <form action="">
+    <form action="/" method="POST" onsubmit="return checkFields(event)">
 
       <div class="input-wrapper">
         <label for="title">Título da Ideia</label>
@@ -22,13 +23,13 @@
       </div>
 
       <div class="input-wrapper">
-        <label for="title">Digite uma descrição para essa ideia</label>
+        <label for="description">Digite uma descrição para essa ideia</label>
         <textarea name="description" cols="30" rows="10"></textarea>
       </div>
 
       <div class="input-wrapper">
         <label for="link">Link da ideia</label>
-        <input type="url" name="image">
+        <input type="url" name="link">
       </div>
 
       <a href="#" onclick="onOff()">Voltar</a>
@@ -37,4 +38,5 @@
     </form>
 
   </div>
+
 </div>
