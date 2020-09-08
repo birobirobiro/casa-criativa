@@ -36,4 +36,4 @@ Projeto desenvolvido durante o WorkshopDev da Rocketseat com o intuito de cadast
 ```
 
 ---
-Desenvolvido com 💜 por [@birobirobiro](twitter.com/birobirobiro_)
+Desenvolvido com 💜 por [@birobirobiro](https://twitter.com/birobirobiro_/)
